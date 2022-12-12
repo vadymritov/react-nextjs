@@ -8,8 +8,6 @@
 
 An [**Next.js**](https://github.com/zeit/next.js/) and [**MongoDB**](https://www.mongodb.com/) web application, designed with simplicity for learning and real-world applicability in mind.
 
-:rocket: [Check out the demo](https://nextjs-mongodb.vercel.app/) :rocket:
-
 </div>
 
 <h2 align="center">Features</h2>
@@ -33,7 +31,7 @@ An [**Next.js**](https://github.com/zeit/next.js/) and [**MongoDB**](https://www
 
 <div align="center">
 
-- [x] Session-based authentication ([Passport.js](https://github.com/jaredhanson/passport))
+- [x] Session-based authentication ([Passport.js])
 - [x] Sign up/Log in/Sign out API
 - [x] Authentication via email/password
 - [ ] Authentication via OAuth (Google, Facebook, etc.)
@@ -61,24 +59,7 @@ An [**Next.js**](https://github.com/zeit/next.js/) and [**MongoDB**](https://www
 
 </div>
 
-<div align="center">
-  
-<sup>Have any features that interest you, [make an issue](https://github.com/hoangvvo/nextjs-mongodb-app/issues). Would like to work on a feature, [make a PR](https://github.com/hoangvvo/nextjs-mongodb-app/pulls).<sup>
-  
-</div>
-
 <h2 align="center">Guide</h2>
-
-This project accompanies the following posts:
-
-- [User authentication (using Passport.js)](https://hoangvvo.com/blog/next-js-and-mongodb-app-1)
-- [User profile and Profile Picture](https://hoangvvo.com/blog/next-js-and-mongodb-app-2)
-- [Email Verification, Password Reset/Changee](https://hoangvvo.com/blog/next-js-and-mongodb-app-3)
-- [Posts and comments](https://hoangvvo.com/blog/next-js-and-mongodb-app-4)
-
-Also check them out on [dev.to](https://dev.to/hoangvvo).
-
-Although the project is written to be secure, its simplicity requires careful considerations for usage in sensitive productions. [File an issue](https://github.com/hoangvvo/nextjs-mongodb-app/issues/new/choose) if you spot any security problems.
 
 <h3 align="center">Dependencies</h3>
 
@@ -100,15 +81,6 @@ This project uses the following dependencies:
 - several other optional dependencies for cosmetic purposes.
 - `nodemailer` - optional, **only if** you use it for email. It is recommended to use 3rd party services like [Mailgun](https://www.mailgun.com/), [AWS SES](https://aws.amazon.com/ses/), etc. instead.
 
-<h3 align="center">Environmental variables</h3>
-
-Environmental variables in this project include:
-
-- `MONGODB_URI` The MongoDB Connection String (with credentials and database name)
-- `WEB_URI` The _URL_ of your web app.
-- `CLOUDINARY_URL` (optional, Cloudinary **only**) Cloudinary environment variable for configuration. See [this](https://cloudinary.com/documentation/node_integration#configuration).
-- `NODEMAILER_CONFIG` (optional, if using nodemailer **only**) JSON stringified nodemailer config. eg. `{"service":"Gmail","auth":{"user":"hoangvvo.02@gmail.com","pass":"aHR0cHM6Ly95b3V0dS5iZS9kUXc0dzlXZ1hjUQ=="}}`
-
 <h3 align="center">Development</h3>
 
 Start the development server by running `yarn dev` or `npm run dev`. Getting started by create a `.env.local` file with the above variables. See [Environment Variables](https://nextjs.org/docs/basic-features/environment-variables).
@@ -120,14 +92,6 @@ This project can be deployed [anywhere Next.js can be deployed](https://nextjs.o
 After building using `npm run build`, simply start the server using `npm run start`.
 
 You can also deploy this with serverless providers given the correct setup.
-
-<h2 align="center">Contributing</h2>
-
-<div align="center">
-  
-Please see my [contributing.md](CONTRIBUTING.md).
-
-</div>
 
 <h2 align="center">
   License
