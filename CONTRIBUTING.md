@@ -53,4 +53,4 @@ The steps to submit a PR are:
 - Consider starting the commit message with an applicable emoji (ex. [gitmoji](https://gitmoji.carloscuesta.me)) for a more beautiful world :rainbow:.
 
 :heart: Thank you,
-Hoang Vo
+Vadym R.
